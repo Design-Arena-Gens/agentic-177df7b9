@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 font-sans antialiased;
+}
+
+.glass-panel {
+  @apply bg-slate-900/60 backdrop-blur-xl border border-white/5 shadow-soft;
+}
+
+.grid-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
